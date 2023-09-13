@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     function search(){
-        let response = fetch(`https://randomfox.ca/floof/?ref=apilist.fun`)
+        fetch(`https://randomfox.ca/floof/?ref=apilist.fun`)
         .then(response => response.json()) 
         .then(data => {
-            console.log(data);
+
             contenedor.innerHTML = "";
             
             const image = data.image;
